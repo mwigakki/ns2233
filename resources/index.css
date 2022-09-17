@@ -63,23 +63,54 @@ body {
   box-shadow: #ebf5e5dd 0px -5px 2px;
 }
 .function-area {
-  width: 80%;
-  margin: 0 10%;
+  width: 70%;
+  margin: 0 15%;
   min-height: 500px;
 }
 .function-table {
   width: 100%;
+  table-layout: fixed; /* 固定每行的宽度不变 */
 }
 .function-table tr {
   vertical-align: top;
 }
+.function-table td {
+  word-wrap: break-word; /* 自动换行 */
+}
+
 .function-card {
-  background-color: #656565;
-  /* opacity: 0.8;*/
+  background-color: #c4d5d6;
   border-radius: 10px;
   width: 90%;
   margin: 10px 10px;
   padding: 10px 10px;
+  box-shadow: #828e95 4px 4px 8px;
+  transition: all 0.3s; /*  实现动画的平滑  */
+}
+
+.function-card:hover {
+  box-shadow: #67686e -2px -2px 8px;
+  transition: all 0.3s; /*  实现动画的平滑  */
+}
+
+.function-card * {
+  margin: 5px 2px;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card-description {
+  font-size: 15px;
+  color: #828e95;
+}
+.card-img {
+  border-radius: 5px;
+  width: 100%;
+}
+.card-music-play {
+  margin: 0;
 }
 .card-content li {
   list-style-type: none;
@@ -97,4 +128,5 @@ body {
 }
 .open-resource {
   text-decoration: none;
+  /*cursor: pointer;*/
 }
