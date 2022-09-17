@@ -1,0 +1,100 @@
+@charset "UTF-8";
+* {
+  /* CSS Reset */
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: versefont;
+  src: url("font/xxx.ttf"); /*演示春风楷*/
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  background-image: url("img/wallpaper1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: absolute;
+  background-attachment: fixed; /* 图片固定到最后，滑动窗口它也不动*/
+}
+.peom-area {
+  position: fixed;
+  line-height: 80px; /*每行高度*/
+  height: 160px;
+  margin-top: 20%;
+  left: 0; /*实现div的居中*/
+  right: 0; /*实现div的居中*/
+  text-align: center; /* ！！div的内容居中！！*/
+  font-size: 25px;
+  z-index: 0;
+}
+.verse {
+  font-size: 35px;
+  font-family: 楷体, versefont, "Times New Roman", Times, serif;
+  text-shadow: #ffffff 0px 0px 5px, #ffffff 0px 0px 5px;
+  text-decoration: none;
+  color: #000;
+}
+/* 状态一: 未被访问过的链接 */
+.verse:link,
+.verse:visited,
+.verse:hover,
+.verse:active {
+  text-decoration: none;
+  color: #000;
+}
+
+.author-title {
+  font-size: 18px;
+  text-shadow: #ffffff 0px 0px 5px, #ffffff 0px 0px 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+.main-area {
+  position: relative; /* 使其不会被prom-area覆盖 */
+  margin-top: 45%;
+  top: 0;
+  left: 0;
+  /* height: 80%; */
+  background-color: #ebf5e5dd; /* 用rgba值设定opacity，以免直接opacity使子级继承了还不能修改 */
+  z-index: 100;
+  box-shadow: #ebf5e5dd 0px -5px 2px;
+}
+.function-area {
+  width: 80%;
+  margin: 0 10%;
+  min-height: 500px;
+}
+.function-table {
+  width: 100%;
+}
+.function-table tr {
+  vertical-align: top;
+}
+.function-card {
+  background-color: #656565;
+  /* opacity: 0.8;*/
+  border-radius: 10px;
+  width: 90%;
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+.card-content li {
+  list-style-type: none;
+}
+
+.footer {
+  text-align: center;
+  background-color: #eeeeee;
+  padding: 10px;
+  box-shadow: #cccccc 0px -5px 5px;
+  font-size: 13px;
+}
+.footer a {
+  color: #555555;
+}
+.open-resource {
+  text-decoration: none;
+}
