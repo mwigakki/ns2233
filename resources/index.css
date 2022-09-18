@@ -37,6 +37,7 @@ body {
   text-shadow: #ffffff 0px 0px 5px, #ffffff 0px 0px 5px;
   text-decoration: none;
   color: #000;
+  cursor: pointer;
 }
 /* 状态一: 未被访问过的链接 */
 .verse:link,
@@ -95,6 +96,27 @@ body {
 
 .function-card * {
   margin: 5px 2px;
+}
+.function-card .link-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.function-card a {
+  border-radius: 3px;
+  text-decoration: none;
+  color: #3f3b37;
+  display: flex;
+  margin: 0;
+}
+.function-card a img {
+  border-radius: 3px;
+}
+.function-card .link-description {
+  overflow: hidden; /*内容会被修剪，并且其余内容是不可见的。*/
+  text-overflow: ellipsis; /*显示省略符号来代表被修剪的文本*/
+  width: 100%;
+  white-space: nowrap; /*文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。*/
 }
 .card-title {
   font-weight: bold;
