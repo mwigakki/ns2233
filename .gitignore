@@ -1,0 +1,8 @@
+# generate by .py
+resources/dailyread.txt
+resources/*.out
+
+test.html
+
+resources/img/
+resources/font/
